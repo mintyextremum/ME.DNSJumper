@@ -4,11 +4,11 @@
 
 **Локальный DNS-резолвер для Windows с шифрованием, измерениями и диагностикой линии.**
 
-[![Релиз](https://img.shields.io/github/v/release/Mintyx/ME.DNSJumper?label=релиз&color=0f766e)](https://github.com/Mintyx/ME.DNSJumper/releases/latest)
-[![Загрузки](https://img.shields.io/github/downloads/Mintyx/ME.DNSJumper/total?label=загрузок&color=0f766e)](https://github.com/Mintyx/ME.DNSJumper/releases)
+[![Релиз](https://img.shields.io/github/v/release/mintyextremum/ME.DNSJumper?label=релиз&color=0f766e)](https://github.com/mintyextremum/ME.DNSJumper/releases/latest)
+[![Загрузки](https://img.shields.io/github/downloads/mintyextremum/ME.DNSJumper/total?label=загрузок&color=0f766e)](https://github.com/mintyextremum/ME.DNSJumper/releases)
 [![Лицензия](https://img.shields.io/badge/лицензия-MIT-0f766e)](LICENSE)
 
-### [⬇ Скачать](https://github.com/Mintyx/ME.DNSJumper/releases/latest) · [📖 Документация](https://mintyx.github.io/ME.DNSJumper/) · [🛠 DoH заблокировали — что делать](https://mintyx.github.io/ME.DNSJumper/blocking/)
+### [⬇ Скачать](https://github.com/mintyextremum/ME.DNSJumper/releases/latest) · [📖 Документация](https://mintyextremum.github.io/ME.DNSJumper/) · [🛠 DoH заблокировали — что делать](https://mintyextremum.github.io/ME.DNSJumper/blocking/)
 
 </div>
 
@@ -37,7 +37,7 @@
   в один сегмент;
 - **измеряет, а не гадает** — проверяет каждый транспорт по-настоящему с вашего канала.
 
-Порядок действий — [«DoH заблокировали»](https://mintyx.github.io/ME.DNSJumper/blocking/).
+Порядок действий — [«DoH заблокировали»](https://mintyextremum.github.io/ME.DNSJumper/blocking/).
 
 ## Что умеет
 
@@ -57,7 +57,7 @@
 
 ## Установка
 
-1. Скачайте `.msi` со [страницы релизов](https://github.com/Mintyx/ME.DNSJumper/releases/latest).
+1. Скачайте `.msi` со [страницы релизов](https://github.com/mintyextremum/ME.DNSJumper/releases/latest).
 2. Запустите. Windows 10/11, x64.
 3. Для автономной работы: **Настройки → Запуск с Windows → С правами администратора**, затем
    **Автономная работа → Сразу направлять систему на резолвер**.
@@ -65,7 +65,7 @@
 Обновляется само. Пакет проверяется по подписи — установщик, не проходящий проверку по
 ключу, вшитому в программу, установлен не будет.
 
-Подробности — [«Установка»](https://mintyx.github.io/ME.DNSJumper/install/).
+Подробности — [«Установка»](https://mintyextremum.github.io/ME.DNSJumper/install/).
 
 ## Чего программа не делает
 
@@ -76,7 +76,7 @@
   бессилен — нужна смена видимого адреса.
 - **Не включает ECH в браузере.** Для этого браузеру нужен собственный защищённый DNS.
 
-Полный список — [«Границы»](https://mintyx.github.io/ME.DNSJumper/limits/).
+Полный список — [«Границы»](https://mintyextremum.github.io/ME.DNSJumper/limits/).
 
 ## Этот репозиторий
 
@@ -84,9 +84,9 @@
 
 - Нашли уязвимость — [SECURITY.md](SECURITY.md), не публичный issue.
 - Что-то не работает — сначала
-  [«Если что-то не так»](https://mintyx.github.io/ME.DNSJumper/troubleshooting/), потом
-  [issue](https://github.com/Mintyx/ME.DNSJumper/issues) с приложенным
-  [отчётом](https://mintyx.github.io/ME.DNSJumper/journal/#отчёт-для-разбора-проблемы).
+  [«Если что-то не так»](https://mintyextremum.github.io/ME.DNSJumper/troubleshooting/), потом
+  [issue](https://github.com/mintyextremum/ME.DNSJumper/issues) с приложенным
+  [отчётом](https://mintyextremum.github.io/ME.DNSJumper/journal/#отчёт-для-разбора-проблемы).
 
 ## Лицензия
 

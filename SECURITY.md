@@ -4,10 +4,10 @@
 
 Не открывайте публичный issue. Напишите на **wtfmateria@gmail.com** с темой, начинающейся
 на `[security]`, или воспользуйтесь
-[приватным сообщением через GitHub](https://github.com/Mintyx/ME.DNSJumper/security/advisories/new).
+[приватным сообщением через GitHub](https://github.com/mintyextremum/ME.DNSJumper/security/advisories/new).
 
 Полезно приложить: версию программы, что происходит, как воспроизвести, и — если применимо —
-[отчёт о проблеме](https://mintyx.github.io/ME.DNSJumper/journal/#отчёт-для-разбора-проблемы)
+[отчёт о проблеме](https://mintyextremum.github.io/ME.DNSJumper/journal/#отчёт-для-разбора-проблемы)
 без журнала запросов.
 
 Ответ придёт в течение недели. Если уязвимость подтвердится, исправление выйдет отдельным
@@ -24,10 +24,10 @@
 ## Что уязвимостью не считается
 
 - **Оператор видит ваши имена.** Это устройство DNS, а не дефект. Способы это уменьшить
-  описаны в [«Приватности»](https://mintyx.github.io/ME.DNSJumper/privacy/).
+  описаны в [«Приватности»](https://mintyextremum.github.io/ME.DNSJumper/privacy/).
 - **Понижение DNSSEC на незнакомой зоне.** Известное и описанное ограничение — см.
-  [«Подписи»](https://mintyx.github.io/ME.DNSJumper/dnssec/#чего-это-не-ловит).
-- **Блокировка по IP не обходится.** Это [граница](https://mintyx.github.io/ME.DNSJumper/limits/),
+  [«Подписи»](https://mintyextremum.github.io/ME.DNSJumper/dnssec/#чего-это-не-ловит).
+- **Блокировка по IP не обходится.** Это [граница](https://mintyextremum.github.io/ME.DNSJumper/limits/),
   а не недоработка.
 - **Атака требует прав администратора на той же машине.** Программа работает в
   пользовательском пространстве и от такого противника не защищает.
