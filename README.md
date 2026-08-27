@@ -86,7 +86,7 @@
 - Что-то не работает — сначала
   [«Если что-то не так»](https://mintyx.github.io/ME.DNSJumper/troubleshooting/), потом
   [issue](https://github.com/Mintyx/ME.DNSJumper/issues) с приложенным
-  [отчётом](https://mintyx.github.io/ME.DNSJumper/journal/#отчет-для-разбора-проблемы).
+  [отчётом](https://mintyx.github.io/ME.DNSJumper/journal/#отчёт-для-разбора-проблемы).
 
 ## Лицензия
 
