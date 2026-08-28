@@ -2,7 +2,7 @@
 
 ## Как сообщить об уязвимости
 
-Не открывайте публичный issue. Напишите на **wtfmateria@gmail.com** с темой, начинающейся
+Не открывайте публичный issue. Напишите на **proton.guard.starfalldev@proton.me** с темой, начинающейся
 на `[security]`, или воспользуйтесь
 [приватным сообщением через GitHub](https://github.com/mintyextremum/ME.DNSJumper/security/advisories/new).
 
