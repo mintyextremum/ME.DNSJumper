@@ -1131,11 +1131,27 @@ GUI-тулчейн. Слой <code>src-tauri/</code> намеренно тонк
 </tr>
 <tr>
 <td><code>policy.rs</code></td>
-<td>Региональная политика подбора</td>
+<td>Региональная политика подбора: страны и операторы</td>
+</tr>
+<tr>
+<td><code>blocklist/</code></td>
+<td>Свои списки: разбор форматов, обход суффиксов, загрузка</td>
+</tr>
+<tr>
+<td><code>compare.rs</code></td>
+<td>Один вопрос всем серверам сразу и разбор расхождений</td>
+</tr>
+<tr>
+<td><code>port.rs</code></td>
+<td>Кто занял порт: имя процесса вместо «попробуйте другой»</td>
+</tr>
+<tr>
+<td><code>plural.rs</code></td>
+<td>Русские числительные в текстах, которые собирает ядро</td>
 </tr>
 </tbody>
 </table>
-<p>Примерно 24 тысячи строк, из них заметная доля — комментарии: почему сделано так, а не почему
+<p>Примерно 26 тысяч строк, из них заметная доля — комментарии: почему сделано так, а не почему
 оно вообще работает.</p>
 <h2 id="путь-запроса">Путь запроса<a class="headerlink" href="#путь-запроса" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>UDP/TCP :53
@@ -1147,10 +1163,12 @@ GUI-тулчейн. Слой <code>src-tauri/</code> намеренно тонк
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   │
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>   ├─ выбор участников гонки (ширина, ротация, разные транспорты)
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>   ├─ EDNS: DNSSEC OK, паддинг
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>   ├─ гонка (параллельно или лесенкой)
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>   ├─ проверка подписей → подделка отбрасывается ДО кэша
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>   ├─ кэш ◄── запись
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>   └─ ответ: AD по своей проверке, лишние подписи сняты
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>   ├─ совмещение: тот же вопрос уже в пути → ждём его ответа
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>   ├─ гонка (параллельно или лесенкой)
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>   ├─ сверка: ответ не на наш вопрос → мусор, ждём дальше
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>   ├─ проверка подписей → подделка отбрасывается ДО кэша
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>   ├─ кэш ◄── запись
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>   └─ ответ: AD по своей проверке, лишние подписи сняты
 </code></pre></div>
 <p>Проверка идёт <strong>до</strong> кэша намеренно: подделке в кэше не место, оттуда она пережила бы и
 конец атаки, и перезапуск программы.</p>
