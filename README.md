@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="logo.png" alt="" width="112" height="112">
+
 # ME.DNSJumper
 
 **Локальный DNS-резолвер для Windows с шифрованием, измерениями и диагностикой линии.**
