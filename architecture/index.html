@@ -1061,7 +1061,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>core/           Всё остальное. Не знает про Tauri и тестируется без него.
 </code></pre></div>
 <p>Ядро (<code>core/</code>) — отдельный крейт <code>dnsjumper-core</code> без единой зависимости от Tauri. Это не
-эстетика: 452 теста проходят за четыре секунды именно потому, что для них не нужно поднимать
+эстетика: 559 тестов проходят за пять секунд именно потому, что для них не нужно поднимать
 GUI-тулчейн. Слой <code>src-tauri/</code> намеренно тонкий — если в нём появляется логика, ей место
 ниже.</p>
 <h2 id="модули-ядра">Модули ядра<a class="headerlink" href="#модули-ядра" title="Permanent link">&para;</a></h2>
@@ -1151,7 +1151,7 @@ GUI-тулчейн. Слой <code>src-tauri/</code> намеренно тонк
 </tr>
 </tbody>
 </table>
-<p>Примерно 26 тысяч строк, из них заметная доля — комментарии: почему сделано так, а не почему
+<p>Примерно 32 тысячи строк на Rust и десять на фронтенде; заметная доля — комментарии: почему сделано так, а не почему
 оно вообще работает.</p>
 <h2 id="путь-запроса">Путь запроса<a class="headerlink" href="#путь-запроса" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>UDP/TCP :53
@@ -1218,7 +1218,7 @@ GUI-тулчейн. Слой <code>src-tauri/</code> намеренно тонк
 изменение настроек проходят через него, поэтому резолвер не может разойтись с тем, что
 записано.</p>
 <h2 id="тесты">Тесты<a class="headerlink" href="#тесты" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cargo<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-p<span class="w"> </span>dnsjumper-core<span class="w">            </span><span class="c1"># 452 теста, ~4 секунды, без сети</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cargo<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-p<span class="w"> </span>dnsjumper-core<span class="w">            </span><span class="c1"># 559 тестов, ~5 секунд, без сети</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cargo<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-p<span class="w"> </span>dnsjumper-core<span class="w"> </span>--<span class="w"> </span>--ignored<span class="w"> </span>--nocapture<span class="w">   </span><span class="c1"># живые, ходят в сеть</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>npx<span class="w"> </span>tsc<span class="w"> </span>--noEmit<span class="w">                        </span><span class="c1"># типы фронта</span>
 </code></pre></div>
